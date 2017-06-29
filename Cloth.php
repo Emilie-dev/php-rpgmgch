@@ -1,4 +1,5 @@
 <?php
+require('Product.php');
 
 class Cloth extends Product {
 
