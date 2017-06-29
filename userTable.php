@@ -7,9 +7,11 @@
 	
 	<table>
 		<thead>
-			<th>id</th>
-			<th>email</th>
-			<th>createdAt</th>
+			<tr>
+				<th>id</th>
+				<th>email</th>
+				<th>createdAt</th>			
+			</tr>
 		</thead>
 		<tbody>
 			
@@ -17,11 +19,10 @@
 $users = require('users.php');
 
 foreach ($users as $user) {
-	echo '<tr><td>'.$user->id().' '.$user->email().' '.$user->createdAt().'</td></tr>';
+	echo '<tr><td>'.$user->getId().'</td><td>'.$user->getEmail().'</td><td> '.$user->getCreatedAt().'</td></tr>';
 }
 
-?>			
-			
+?>						
 		</tbody>
 	</table>
 

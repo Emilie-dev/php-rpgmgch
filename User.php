@@ -2,23 +2,42 @@
 
 class User {
 
-	private $_id = 'lala';
-	private $_email = 'lala@1234';
-	private $_createdAt = '23-07-2002';
+	private $_id;
+	private $_email;
+	private $_createdAt;
 
 
-	public function id() {
+// accesseurs (getters/setters)
+// je récupére les valeurs des attributs avec get
+
+	public function getId() {
 		return $this->_id;
 	}
 
 
-	public function email() {
+	public function getEmail() {
 		return $this->_email;
 	}
 
 
-	public function createdAt() {
+	public function getCreatedAt() {
 		return $this->_createdAt;
+	}
+
+// je me sert de set pour modifier et renvoyer les modifs dans les attributs
+
+	public function setId($i) {
+		                //paramétre entrant
+		$this->_id = $i;
+	//paramétre sortant	
+	}
+
+	public function setEmail($j) {
+		$this->_email = $j;
+	}
+
+	public function setCreatedAt($k) {
+		$this->_createdAt = $k;
 	}
 
 }
